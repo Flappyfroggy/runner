@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=4 uid="uid://l5vhfkob7c0u"]
+
+[ext_resource type="Texture2D" uid="uid://2gxj2vrciyrs" path="res://asset/bg.jpeg" id="1_drhme"]
+[ext_resource type="PackedScene" uid="uid://cjvh2noml5135" path="res://scene/character_body_2d.tscn" id="2_guiot"]
+[ext_resource type="Texture2D" uid="uid://bootv4k5wbx72" path="res://asset/dirt1.png" id="2_ppd22"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3cebx"]
+texture = ExtResource("2_ppd22")
+0:0/size_in_atlas = Vector2i(12, 12)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-100.35896, -95.48717, 95.48715, -95.48717, 96.46152, 95.48715, -96.461525, 98.41025)
+
+[sub_resource type="TileSet" id="TileSet_tytcy"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_3cebx")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4689, -16)
+scale = Vector2(1, 0.41438907)
+texture = ExtResource("1_drhme")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD0/xIAAAAAAAAAAAD9/xIAAAAAAAAAAAAFABIAAAAAAAAAAAAQABIAAAAAAAAAAAAcABIAAAAAAAAAAAAoABIAAAAAAAAAAAA0ABIAAAAAAAAAAABAABIAAAAAAAAAAABLABIAAAAAAAAAAABWABIAAAAAAAAAAABiABIAAAAAAAAAAABuABIAAAAAAAAAAAB6ABIAAAAAAAAAAACGABIAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_tytcy")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_guiot")]
+position = Vector2(-3, 17)
