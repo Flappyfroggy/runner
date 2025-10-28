@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3hdx2t81j6x8"]
+
+[ext_resource type="Script" uid="uid://cppfg5nh4koja" path="res://startgame.gd" id="1_mfd0b"]
+[ext_resource type="Texture2D" uid="uid://bbestybwabrxa" path="res://asset/dirt1 - Copy (3).png" id="2_0kded"]
+
+[node name="startgame" type="Node2D"]
+script = ExtResource("1_mfd0b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(570, 333)
+scale = Vector2(11.969388, 9.032469)
+texture = ExtResource("2_0kded")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 171.0
+offset_top = 73.0
+offset_right = 1094.0
+offset_bottom = 316.0
+theme_override_font_sizes/normal_font_size = 136
+text = "Water Frog"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 254.0
+offset_top = 437.0
+offset_right = 1034.0
+offset_bottom = 774.0
+theme_override_font_sizes/normal_font_size = 70
+text = "Don't touch the water!
+A to start game"

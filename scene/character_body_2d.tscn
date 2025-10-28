@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cjvh2noml5135"]
+[gd_scene load_steps=5 format=3 uid="uid://cjvh2noml5135"]
 
 [ext_resource type="Script" uid="uid://cy23b7gwiucea" path="res://character_body_2d.gd" id="1_qug0s"]
 [ext_resource type="Texture2D" uid="uid://bsdpmuy4aro6c" path="res://asset/sprite_1.png" id="2_gd05a"]
+[ext_resource type="PackedScene" uid="uid://cq5pbpowmvtip" path="res://scene/label.tscn" id="3_gd05a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_86iwx"]
 size = Vector2(319, 246.625)
@@ -15,7 +16,7 @@ scale = Vector2(1.0572265, 1.096582)
 texture = ExtResource("2_gd05a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-6, -53.6875)
+position = Vector2(-15, -51)
 shape = SubResource("RectangleShape2D_86iwx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -23,3 +24,5 @@ zoom = Vector2(0.5, 0.5)
 limit_left = -274
 limit_top = -520
 limit_bottom = 376
+
+[node name="label" parent="Camera2D" instance=ExtResource("3_gd05a")]
