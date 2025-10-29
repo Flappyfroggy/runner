@@ -12,18 +12,18 @@ scale = Vector2(11.969388, 9.032469)
 texture = ExtResource("2_0kded")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 171.0
-offset_top = 73.0
-offset_right = 1094.0
-offset_bottom = 316.0
+offset_left = 159.0
+offset_top = 4.0
+offset_right = 1082.0
+offset_bottom = 247.0
 theme_override_font_sizes/normal_font_size = 136
 text = "Water Frog"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
-offset_left = 254.0
-offset_top = 437.0
-offset_right = 1034.0
-offset_bottom = 774.0
+offset_left = 183.0
+offset_top = 395.0
+offset_right = 963.0
+offset_bottom = 732.0
 theme_override_font_sizes/normal_font_size = 70
 text = "Don't touch the water!
 A to start game"

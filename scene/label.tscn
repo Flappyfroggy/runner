@@ -5,8 +5,8 @@
 [node name="label" type="Node2D"]
 script = ExtResource("1_4uu35")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="label" type="RichTextLabel" parent="."]
+offset_right = 4865.0
+offset_bottom = 120.0
 theme_override_font_sizes/normal_font_size = 70
 text = "Score: 0"

@@ -26,3 +26,4 @@ limit_top = -520
 limit_bottom = 376
 
 [node name="label" parent="Camera2D" instance=ExtResource("3_gd05a")]
+position = Vector2(-146, -635)
