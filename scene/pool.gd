@@ -1,7 +1,8 @@
 extends Node2D
 @export var p_1: Vector2 = Vector2(1200,220)
-@export var p_2: Vector2 = Vector2(9000,220)
+@export var p_2: Vector2 = Vector2(39400,220)
 @onready var pool: Resource = preload("res://scene/pool.tscn")
+@onready var player: Resource = preload("res://scene/character_body_2d.tscn")
 var existing_positions: Array = []
 func get_random_point_inside(p1: Vector2, p2: Vector2) -> Vector2:
 	var x_value: float = randf_range(p1.x, p2.x)
@@ -21,11 +22,14 @@ func spawn():
 	while attempts < max_attempts:
 		var pos = get_random_point_inside(p_1, p_2)
 		if is_position_far_enough(pos):
-			pool_instance.global_position = pos
+			pool_instance.position = pos
 			existing_positions.append(pos)
-			return  
+			return
 		attempts += 1
 	pool_instance.queue_free()
+	var playere: Node = player.instantiate()
+	playere.position = Vector2(0, 0)
 func _ready():
-	for i in range(9):
+	randomize()
+	for i in range(25):
 		spawn()
