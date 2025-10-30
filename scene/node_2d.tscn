@@ -30,3 +30,11 @@ tile_set = SubResource("TileSet_tytcy")
 position = Vector2(-3, 17)
 
 [node name="spawner" parent="." instance=ExtResource("4_3cebx")]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 38573.0
+offset_top = -301.0
+offset_right = 39179.0
+offset_bottom = 102.0
+theme_override_font_sizes/normal_font_size = 100
+text = "To be continued?"

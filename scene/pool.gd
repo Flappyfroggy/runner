@@ -31,5 +31,5 @@ func spawn():
 	playere.position = Vector2(0, 0)
 func _ready():
 	randomize()
-	for i in range(25):
+	for i in range(31):
 		spawn()
